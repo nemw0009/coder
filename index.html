@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>may tinh</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hoho.cpp">
+
+</head>
+<body style="justify-content: center;justify-items: center;align-items: center;align-items: center;">
+    <div class="calulator">
+
+    <div class="fieldset">
+   <div class="legend">may tinh</div>
+    <form name="calculator">
+        <input style="border: 2px solid black;" type="text" name="display" id="display" disabled>
+        <div class="button" style="margin-top: 10px;">
+        <br>
+        <input style="border: 2px solid black;width: 30px;height:30px;" type="button" value="1" onclick="calculator.display.value += '1'">
+        <input style="border: 2px solid black;width: 30px;height:30px;" type="button" value="2" onclick="calculator.display.value += '2'">
+        <input style="border: 2px solid black;width: 30px;height:30px;" type="button" value="3" onclick="calculator.display.value += '3'">
+        <input style="border: 2px solid black;width: 30px;height:30px;" type="button" value="+" onclick="calculator.display.value += '+'">
+        <br>
+        <input style="border: 2px solid black;width: 30px;height:30px;" type="button" value="4" onclick="calculator.display.value += '4'">
+        <input style="border: 2px solid black;width: 30px;height:30px;" type="button" value="5" onclick="calculator.display.value += '5'">
+        <input style="border: 2px solid black;width: 30px;height:30px;" type="button" value="6" onclick="calculator.display.value += '6'">
+        <input style="border: 2px solid black;width: 30px;height:30px;" type="button" value="-" onclick="calculator.display.value += '-'">
+        <br>
+        <input style="border: 2px solid black;width: 30px;height:30px;" type="button" value="7" onclick="calculator.display.value += '7'">
+        <input style="border: 2px solid black;width: 30px;height:30px;" type="button" value="8" onclick="calculator.display.value += '8'">
+        <input style="border: 2px solid black;width: 30px;height:30px;" type="button" value="9" onclick="calculator.display.value += '9'">
+        <input style="border: 2px solid black;width: 30px;height:30px;" type="button" value="*" onclick="calculator.display.value += '*'">
+        <br>
+        <input style="border: 2px solid black;width: 30px;height:30px;" type="button" value="0" onclick="calculator.display.value += '0'">
+        <input style="border: 2px solid black;width: 30px;height:30px;" type="button" value="C" onclick="calculator.display.value = ''">
+        <input style="border: 2px solid black;width: 30px;height:30px;" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+        <input style="border: 2px solid black;width: 30px;height:30px;" type="button" value="/" onclick="calculator.display.value += '/'">
+        </div>
+    </div>
+</body>
+</html>

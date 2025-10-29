@@ -1,0 +1,31 @@
+.calulator{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 200px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    border: 2px solid black;
+    size: 500px;
+
+}
+.button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: coral;
+    margin-top: 10px;
+}
+.body{
+    background-color: aquamarine;
+
+}
+.legend{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
