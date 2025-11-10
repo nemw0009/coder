@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list </title>
+    <link rel="stylesheet" href="colortodolist.css">
+</head>
+<body>
+    <div class="container"> 
+
+        <div class="description">Quản lý công việc hàng ngày của bạn một cách hiệu quả!</div>
+
+    </div>
+    <div class="header"> my to do list</div>
+    <div class="input">
+        <input type="text" id="taskInput" placeholder="nhap cong viec...">
+        <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+    <script>
+        function addTask() {
+            const taskInput = document.getElementById('taskInput');
+            const taskList = document.getElementById('taskList');
+
+            if (taskInput.value.trim() !== '') {
+                const li = document.createElement('li');
+                li.textContent = taskInput.value;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.onclick = function() {
+                    taskList.removeChild(li);
+                };
+
+                li.appendChild(deleteButton);
+                taskList.appendChild(li);
+
+                taskInput.value = '';
+            }
+        }
+    </script>
+    <div class="timetable">
+       
+        <div class="monday">Monday
+            <div class="nhap">
+                <input type="text" id="mondayInput" placeholder="nhap list">
+                <button onclick="addMondayTask()">Add</button>
+            </div>
+            <div class="in">
+                <ul id="mondayList"></ul>
+                <script>
+                    function addMondayTask() {
+                        const mondayInput = document.getElementById('mondayInput');
+                        const mondayList = document.getElementById('mondayList');
+
+                        if (mondayInput.value.trim() !== '') {
+                            const li = document.createElement('li');
+                            li.textContent = mondayInput.value;
+
+                            const deleteButton = document.createElement('button');
+                            deleteButton.textContent = 'Delete';
+                            deleteButton.onclick = function() {
+                                mondayList.removeChild(li);
+                            };
+
+                            li.appendChild(deleteButton);
+                            mondayList.appendChild(li);
+
+                            mondayInput.value = '';
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="tuesday">Tuesday
+            <div class="nhaplist">
+                <input type="text" id="tuesdayInput" placeholder="nhap list">
+                <button onclick="addTuesdayTask()">Add</button>
+                <div class="intus">
+                    <ul id="tuesdayList"></ul>
+                    <script>
+                        function addTuesdayTask() {
+                            const tuesdayInput = document.getElementById('tuesdayInput');
+                            const tuesdayList = document.getElementById('tuesdayList');
+
+                            if (tuesdayInput.value.trim() !== '') {
+                                const li = document.createElement('li');
+                                li.textContent = tuesdayInput.value;
+
+                                const deleteButton = document.createElement('button');
+                                deleteButton.textContent = 'Delete';
+                                deleteButton.onclick = function() {
+                                    tuesdayList.removeChild(li);
+                                };
+
+                                li.appendChild(deleteButton);
+                                tuesdayList.appendChild(li);
+
+                                tuesdayInput.value = '';
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="wednesday">Wednesday
+            <div class="nhapwed">
+                <input type="text" id="wednesdayInput" placeholder="nhap list">
+                <button onclick="addWednesdayTask()">Add</button>
+            </div>
+            <div class="inwed">
+                <ul id="wednesdayList"></ul>
+                <script>
+                    function addWednesdayTask() {
+                        const wednesdayInput = document.getElementById('wednesdayInput');
+                        const wednesdayList = document.getElementById('wednesdayList');
+
+                        if (wednesdayInput.value.trim() !== '') {
+                            const li = document.createElement('li');
+                            li.textContent = wednesdayInput.value;
+
+                            const deleteButton = document.createElement('button');
+                            deleteButton.textContent = 'Delete';
+                            deleteButton.onclick = function() {
+                                wednesdayList.removeChild(li);
+                            };
+
+                            li.appendChild(deleteButton);
+                            wednesdayList.appendChild(li);
+
+                            wednesdayInput.value = '';
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="thursday">Thursday
+            <div class="nhapthur">
+                <input type="text" id="thursdayInput" placeholder="nhap list">
+                <button onclick="addThursdayTask()">Add</button>
+            </div>
+            <div class="inthur">
+                <ul id="thursdayList"></ul>
+                <script>
+                    function addThursdayTask() {
+                        const thursdayInput = document.getElementById('thursdayInput');
+                        const thursdayList = document.getElementById('thursdayList');
+
+                        if (thursdayInput.value.trim() !== '') {
+                            const li = document.createElement('li');
+                            li.textContent = thursdayInput.value;
+
+                            const deleteButton = document.createElement('button');
+                            deleteButton.textContent = 'Delete';
+                            deleteButton.onclick = function() {
+                                thursdayList.removeChild(li);
+                            };
+
+                            li.appendChild(deleteButton);
+                            thursdayList.appendChild(li);
+
+                            thursdayInput.value = '';
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="friday">Friday
+            <div class="nhapfri">   
+                <input type="text" id="fridayInput" placeholder="nhap list">
+                <button onclick="addFridayTask()">Add</button>
+            </div>
+            <div class="infri">
+                <ul id="fridayList"></ul>
+                <script>
+                    function addFridayTask() {
+                        const fridayInput = document.getElementById('fridayInput');
+                        const fridayList = document.getElementById('fridayList');
+
+                        if (fridayInput.value.trim() !== '') {
+                            const li = document.createElement('li');
+                            li.textContent = fridayInput.value;
+
+                            const deleteButton = document.createElement('button');
+                            deleteButton.textContent = 'Delete';
+                            deleteButton.onclick = function() {
+                                fridayList.removeChild(li);
+                            };
+
+                            li.appendChild(deleteButton);
+                            fridayList.appendChild(li);
+
+                            fridayInput.value = '';
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="saturday">Saturday
+            <div class="nhapsat">
+                <input type="text" id="saturdayInput" placeholder="nhap list">
+                <button onclick="addSaturdayTask()">Add</button>
+            </div>
+            <div class="insat">
+                <ul id="saturdayList"></ul>
+                <script>
+                    function addSaturdayTask() {
+                        const saturdayInput = document.getElementById('saturdayInput');
+                        const saturdayList = document.getElementById('saturdayList');
+
+                        if (saturdayInput.value.trim() !== '') {
+                            const li = document.createElement('li');
+                            li.textContent = saturdayInput.value;
+
+                            const deleteButton = document.createElement('button');
+                            deleteButton.textContent = 'Delete';
+                            deleteButton.onclick = function() {
+                                saturdayList.removeChild(li);
+                            };
+
+                            li.appendChild(deleteButton);
+                            saturdayList.appendChild(li);
+
+                            saturdayInput.value = '';
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="sunday">Sunday
+            <div class="nhapsun">
+                <input type="text" id="sundayInput" placeholder="nhap list">
+                <button onclick="addSundayTask()">Add</button>
+            </div>
+            <div class="insun">
+                <ul id="sundayList"></ul>
+                <script>
+                    function addSundayTask() {
+                        const sundayInput = document.getElementById('sundayInput');
+                        const sundayList = document.getElementById('sundayList');
+
+                        if (sundayInput.value.trim() !== '') {
+                            const li = document.createElement('li');
+                            li.textContent = sundayInput.value;
+
+                            const deleteButton = document.createElement('button');
+                            deleteButton.textContent = 'Delete';
+                            deleteButton.onclick = function() {
+                                sundayList.removeChild(li);
+                            };
+
+                            li.appendChild(deleteButton);
+                            sundayList.appendChild(li);
+
+                            sundayInput.value = '';
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+<div class="savefile">
+    <button onclick="saveToFile()">Save to File</button>
+    <script>
+        function saveToFile() {
+            let content = '';
+            const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+            days.forEach(day => {
+                const list = document.getElementById(day.toLowerCase() + 'List');
+                content += day + ':\n';
+                list.querySelectorAll('li').forEach(item => {
+                    content += '- ' + item.firstChild.textContent + '\n';
+                });
+                content += '\n';
+            });
+
+            const blob = new Blob([content], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'timetable.txt';
+            link.click();
+        }
+    </script>
+</div>
+<div class="uploadfile">
+    <input type="file" id="fileInput">
+    <button onclick="loadFromFile()">Load from File</button>
+    <script>
+        function loadFromFile() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const content = e.target.result;
+                const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+                let currentDay = '';
+
+                content.split('\n').forEach(line => {
+                    if (days.includes(line.replace(':', ''))) {
+                        currentDay = line.replace(':', '');
+                    } else if (line.startsWith('- ') && currentDay) {
+                        const task = line.substring(2);
+                        const list = document.getElementById(currentDay.toLowerCase() + 'List');
+
+                        const li = document.createElement('li');
+                        li.textContent = task;
+
+                        const deleteButton = document.createElement('button');
+                        deleteButton.textContent = 'Delete';
+                        deleteButton.onclick = function() {
+                            list.removeChild(li);
+                        };
+
+                        li.appendChild(deleteButton);
+                        list.appendChild(li);
+                    }
+                });
+            };
+            reader.readAsText(file);
+        }
+    </script>
+</div>
+</body>
+</html>
